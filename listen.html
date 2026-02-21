@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTEN – ONICRA</title>
+
+    <!-- Fuente Cutive Mono -->
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+
+    <!-- Fuente Syne Mono para la cabecera -->
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+
+    <!-- Fuente MonoFett para el heading shiopi -->
+    <link href="https://fonts.googleapis.com/css2?family=Monofett&display=swap" rel="stylesheet">
+
+    <!-- Fuente Monoton para el heading shiopi -->
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+
+
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Cutive Mono', monospace;
+            background-color: #5f5264;
+            color: white;
+        }
+
+        header {
+            background-color: #362638;
+            color: white;
+            padding: 15px 15px;
+            text-align: center;
+            font-family: 'Syne Mono', monospace;
+            opacity: 0;
+            animation: fadeInMove 3.8s ease forwards;
+        }
+
+        @keyframes fadeInMove { 
+            to { opacity: 1; transform: translateY(0); } 
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+
+        .banner-onicra {
+            background-color: #9655939f;
+            color: #5aeff4a9;
+            padding: 6px 0;
+            text-align: center;
+            font-size: 1.1rem;
+            animation: fadeInMove 6.8s ease forwards;
+            opacity: 0;
+        }
+
+        a {
+            color: #362638;
+            text-decoration: none;
+        }
+
+        .recuadro-onicra {
+            background-color: #9655939f;
+            color: #362638;
+            border: 8px groove #362638;
+            padding: 15px 20px;
+            max-width: 850px;
+            margin: 30px auto 10px auto;
+            text-align: center;
+            font-size: 1.1rem;
+            font-family: 'Cutive Mono', monospace;
+            animation: cambioColor 2.5s ease forwards;
+            animation-delay: 1s;
+        }
+
+        @keyframes cambioColor {
+            0% { background-color: #9655939f; }
+            100% { background-color:  #5aeff4a9; } /* #5aeff4a9 #f45a8da9*/
+        }
+
+        .recuadro-onicra a:hover {
+            color: white;
+        }
+
+        .palabra {
+            opacity: 0;
+            animation: aparecer 0s ease backwards;
+            animation-delay: calc(var(--i) * 0.35s);
+            animation-fill-mode: both;
+        }
+
+        @keyframes aparecer {
+            from { opacity: 0; transform: translateY(10px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ---------------------- */
+        /* SECCIÓN SHIOPI (CROMOS) */
+        /* ---------------------- */
+
+        .shiopi {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .shiopi h2 {
+            margin-top: 20px;
+            font-size: 3rem;
+            font-family: 'Monoton', cursive;
+            color:aqua;
+            /*border: 4px groove #5af48885;*/
+            padding: 0.5px;
+            text-align: center;
+        }
+
+        .cromo {
+            display: flex;
+            border: 6px groove #5aeff4a9;
+            padding: 20px;
+            background: #362638;
+            gap: 20px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            
+        }
+
+        .cromo.reverse {
+            flex-direction: row-reverse;
+            text-align: left;
+        
+        }
+
+        .cromo-imagen img {
+            width: 320px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+         .cromo-imagen iframe {
+         width: 512px;
+         height: 288px;
+         border-radius: 10px;
+        }
+
+
+        .cromo-texto h3 {
+            font-family: 'Syne Mono', monospace;
+            font-size: 1.8rem;
+            margin: 0 0 10px;
+            color: #f4e45abb;
+        }
+
+          .cromo-texto h4 {
+            font-family: 'Monoton', monospace;
+            font-size: 1.8rem;
+            margin: 0 0 10px;
+            color: #5aeff4a9;
+
+        }
+
+        .cromo-texto p {
+            font-family: 'Cutive Mono', monospace;
+            font-size: 1.1rem;
+            color: white;
+            line-height: 1.4;
+        }
+
+    .linea-azul {
+    color: #5aeff4a9;
+      font-family: 'Cutive Mono', monospace;
+            font-size: 1.1rem;
+            line-height: 1.4;
+    }
+
+
+        footer {
+            text-align: center;
+            padding: 12px;
+            margin-top: 12px;
+            background-color: #5aeff4a9;
+            color: black;
+            font-size: 0.9rem;
+        }
+
+    /* COLLAGE */
+.collage {
+    max-width: 900px;
+    margin: 20px auto 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.collage a {
+    display: block;
+}
+
+.collage img {
+    width: 100%;
+    border-radius: 10px;
+    border: 4px groove #5aeff4a9;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.collage img:hover {
+    transform: scale(1.03);
+}
+
+/* LIGHTBOX */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.lightbox img {
+    max-width: 90vw;   /* nunca más ancho que la pantalla */
+    max-height: 90vh;  /* nunca más alto que la pantalla */
+    border-radius: 10px;
+    border: 6px groove #5aeff4a9;
+    object-fit: contain;
+}
+
+.lightbox:target {
+    display: flex;
+}
+ 
+.lightbox .prev,
+.lightbox .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 4rem;
+    color: #5aeff4a9;
+    text-decoration: none;
+    padding: 100px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.lightbox .prev {
+    left: 20px;
+}
+
+.lightbox .next {
+    right: 20px;
+}
+
+.lightbox .prev:hover,
+.lightbox .next:hover {
+    color: white;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>MELISA_CANO == ONiCrA</h1>
+        <p>-- . .-.. .. ... .- -.-. .- -. --- / / --- -. .. -.-. .-. .- .-.-</p>
+    </header>
+
+    <!-- BANNER -->
+    <div class="banner-onicra">
+        <strong>~-_~-_ ~^~~ ∿∿∿ LISTEN ∿∿∿ ~^~~ ~-_~-_</strong>
+    </div>
+
+    <!-- MENÚ -->
+    <div class="recuadro-onicra">
+        <strong>
+            ⟦ <span class="palabra" style="--i:1"><a href="index.html">about&onicra&cv</a></span> ⟧ ·
+            ⟦ <span class="palabra" style="--i:2"><a href="oramics.html">oramics</a></span> ⟧ ·
+            ⟦ <span class="palabra" style="--i:3"><a href="projects.html">projects</a></span> ⟧ ·
+            ⟦ <span class="palabra" style="--i:4"><a href="shiopi.html">shiopi</a></span> ⟧
+        </strong>
+    </div>
+
+   
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        Sound Artist · Free impro soul · Contemporary pianist · Code lover
+        <p>melisacanosanchez@gmail.com ᗧ©©© 2026 melisa cano – onicra</p>
+    </footer>
+
+</body>
+</html>
