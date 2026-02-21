@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIOPI – Melisa</title>
+
+    <!-- Fuente Cutive Mono -->
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+
+    <!-- Fuente Syne Mono para la cabecera -->
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+
+    <!-- Fuente MonoFett para el heading shiopi -->
+    <link href="https://fonts.googleapis.com/css2?family=Monofett&display=swap" rel="stylesheet">
+
+    <!-- Fuente Monoton para el heading shiopi -->
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+
+
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Cutive Mono', monospace;
+            background-color: #5f5264;
+            color: white;
+        }
+
+        header {
+            background-color: #362638;
+            color: white;
+            padding: 15px 15px;
+            text-align: center;
+            font-family: 'Syne Mono', monospace;
+            opacity: 0;
+            animation: fadeInMove 3.8s ease forwards;
+        }
+
+        @keyframes fadeInMove { 
+            to { opacity: 1; transform: translateY(0); } 
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+
+        .banner-onicra {
+            background-color: #9655939f;
+            color: #5af46292;
+            padding: 6px 0;
+            text-align: center;
+            font-size: 1.1rem;
+            animation: fadeInMove 6.8s ease forwards;
+            opacity: 0;
+        }
+
+        a {
+            color: #362638;
+            text-decoration: none;
+        }
+
+        .recuadro-onicra {
+            background-color: #9655939f;
+            color: #362638;
+            border: 8px groove #362638;
+            padding: 15px 20px;
+            max-width: 850px;
+            margin: 30px auto 10px auto;
+            text-align: center;
+            font-size: 1.1rem;
+            font-family: 'Cutive Mono', monospace;
+            animation: cambioColor 2.5s ease forwards;
+            animation-delay: 1s;
+        }
+
+        @keyframes cambioColor {
+            0% { background-color: #9655939f; }
+            100% { background-color: #5af4a2a9; }
+        }
+
+        .recuadro-onicra a:hover {
+            color: white;
+        }
+
+        .palabra {
+            opacity: 0;
+            animation: aparecer 0s ease backwards;
+            animation-delay: calc(var(--i) * 0.35s);
+            animation-fill-mode: both;
+        }
+
+        @keyframes aparecer {
+            from { opacity: 0; transform: translateY(10px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ---------------------- */
+        /* SECCIÓN SHIOPI (CROMOS) */
+        /* ---------------------- */
+
+        .shiopi {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .shiopi h2 {
+            margin-top: 20px;
+            font-size: 3rem;
+            font-family: 'Monoton', cursive;
+            color:aqua;
+            /*border: 4px groove #5af48885;*/
+            padding: 0.5px;
+            text-align: center;
+        }
+
+        .cromo {
+            display: flex;
+            border: 6px groove #5af4a2a9;
+            padding: 20px;
+            background: #362638;
+            gap: 20px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            
+        }
+
+        .cromo.reverse {
+            flex-direction: row-reverse;
+            text-align: left;
+        
+        }
+
+        .cromo-imagen img {
+            width: 320px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .cromo-texto h3 {
+            font-family: 'Syne Mono', monospace;
+            font-size: 1.8rem;
+            margin: 0 0 10px;
+            color: #f4e45abb;
+        }
+
+          .cromo-texto h4 {
+            font-family: 'Syne Mono', monospace;
+            font-size: 1.8rem;
+            margin: 0 0 10px;
+            color: #f4e45abb;
+            text-align: center;
+        }
+
+        .cromo-texto p {
+            font-family: 'Cutive Mono', monospace;
+            font-size: 1.1rem;
+            color: white;
+            line-height: 1.4;
+        }
+
+    .linea-verde {
+    color: #5af4a2a9;
+      font-family: 'Cutive Mono', monospace;
+            font-size: 1.1rem;
+            line-height: 1.4;
+    }
+
+
+        footer {
+            text-align: center;
+            padding: 12px;
+            margin-top: 12px;
+            background-color: #5af4a2a9;
+            color: black;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>MELISA_CANO == ONiCrA</h1>
+        <p>-- . .-.. .. ... .- -.-. .- -. --- / / --- -. .. -.-. .-. .- .-.-</p>
+    </header>
+
+    <!-- BANNER -->
+    <div class="banner-onicra">
+        <strong>🤫🌈 ∿ shhhh ∿ SHIOPI ∿ siopi ∿ 🪴🌾</strong>
+    </div>
+
+    <!-- MENÚ -->
+    <div class="recuadro-onicra">
+        <strong>
+            ⟦ <span class="palabra" style="--i:1"><a href="index.html">about&onicra&cv</a></span> ⟧ ·
+            ⟦ <span class="palabra" style="--i:2"><a href="projects.html">projects</a></span> ⟧ ·
+            ⟦ <span class="palabra" style="--i:3"><a href="oramics.html">oramics</a></span> ⟧ ·
+            ⟦ <span class="palabra" style="--i:4"><a href="listen.html">listen</a></span> ⟧
+        </strong>
+    </div>
+
+    <!-- SECCIÓN SHIOPI -->
+     <section class="shiopi"> 
+        <!--<h2>S H I O P I</h2>  -->
+
+        <!-- CROMO 1 -->
+        <div class="cromo">
+            <div class="cromo-imagen">
+                <img src="shiopi_imagen1.jpg" alt="Imagen del cromo">
+            </div>
+
+            <div class="cromo-texto">
+                <h3>SHIOPI 🪴🌾</h3>
+                <p>
+                   <strong> <span class="linea-verde">Can silence be more than the absence of sound?</span> </strong> 
+                    In a society where people move around spaces without any pause, 
+                    Shiopi highlights the act of listening using 
+                    the blank sonic space that silence offers to unfold its full potential
+                    <p>Shiopi presents itself as a Sound_Installation/Sound_Object that
+                    explores memories of natural environments and the sonification of the
+                invisible sourroundings, with silence as its catalytic element
+            </p> 
+            <p>The name Shiopi comes from the Greek word siopí (σιωπή), 
+                meaning silence, and the onomatopoeia sh, used to ask for quietness</p>
+
+                
+            </div>
+        </div>
+
+         <!-- INTERLUDIO -->
+        <div class="cromo">
+
+            <div class="cromo-texto">
+                <h3>SHIOPI = SILENCE -> LISTENING PROCESS -> NATURE+SONIFICATION OF THE INSIVIBLE 🤫=🌿+🌈!💥</h3>
+                <p>Shiopi continuously searches for a quiet environment that enables focused listening. 
+                    Silence is understood as a space open to the listening process. 
+                    The sound material of Shiopi transforms itself according to the possibilities of immersing 
+                    oneself in the listening process. </p>      
+                <p> 
+                    <strong><span class="linea-verde">
+                    When the space is quiet, silence casts a spell, creating 
+                    unreal and magical soundscapes that fuses field recordings of natural environments with electronic sounds 
+                    produced through the sonification of invisible data in real time (UV radiation, ambient light, 
+                    temperature and humidity)</span> </strong></p>   <!-- otro color -->
+                <p>On the contrary, when the listening process is broken, only the nature sounds remains, 
+                    closing the gateaway to perceiving the unseen.   </p>
+                <p>There is a hidden third layer of sound that only emerges when the noise level in the space is
+                    overwhelming. This sound material is disruptive in its essence and functions as a final warning to restore quietness. 
+                    This sound layer vibrates with a pink noise filtered according to the fundamental frequency of the space
+                     and modulated with a sinusoidal wave
+                </p>
+                <p>**shiopi does not react to sudden and accidental noises 
+                    but instead measures the average silence level over approximately the last 11.6 seconds**</p>
+                <p><strong><span class="linea-verde">SHIOPI was premiered at TTTArts 2025 in Ljubljana</span></strong></p>
+    
+            </div>
+        </div>
+
+        <!-- CROMO 2 (invertido) -->
+        <div class="cromo reverse">
+            <div class="cromo-imagen">
+                <img src="shiopi_imagen2.jpg" alt="Imagen del cromo">
+            </div>
+            <div class="cromo-texto">
+                <h3>UNREAL SOUNDSCAPES ✨</h3>
+                <p><strong><span class="linea-verde">
+                    Can we hear all the vibrations that surround us? </span></strong>
+                    Our human ear can perceive a limited
+                    spectrum of frecruencies, besides, some stimuli do not manifest as an acoustic wave. 
+                    To expand the meaning of soundscape, shiopi transform unheard environmental data into electronic sounds, 
+                </p>
+                <p>This data controls four different synths and their internal patterns -texture, 
+                    rhythm, frecuencies,etc.
+                    Most of the features are controlled in a subtle manner, using a complex internal mapping logic.
+                     However, <strong><span class="linea-verde">the UV radition determinates</span></strong>, 
+                     in a straight corelation, when the synths are activated and deactivated, 
+                     creating 
+                   <strong><span class="linea-verde">
+                    two contrasting sound_atmospheres: brighter/magical vs dark/mystery</span> </strong>
+
+                </p>
+            </div>
+        </div>
+
+
+        <!-- CROMO 3 -->
+        <div class="cromo">
+            <div class="cromo-imagen">
+                <img src="shiopi_imagen3.jpeg" alt="Imagen del cromo">
+            </div>
+            <div class="cromo-texto">
+                <h3>HOW DOES IT WORK? DIY+OPEN_SOURCES</h3>
+
+                    <p>ESP32 & SENSORS: ALS-PT19-UVLTR390-DHT22-BME280</p>  
+                    <p>PUREDATA: main patch -> receive&send info through OSC, maps the values, 
+                        controls the level of silence and the sound layers</p>
+                    <p>SUPERCOLLIDER: generates the electronic sounds</p>  
+            </div>
+        </div>
+
+          <!-- CROMO 4 (invertido) -->
+        <div class="cromo reverse">
+            <div class="cromo-imagen">
+                <img src="shiopi_imagen4.jpg" alt="Imagen del cromo">
+            </div>
+
+            <div class="cromo-imagen">
+                <img src="shiopi_imagen5.jpg" alt="Imagen del cromo">
+            </div>
+            <div class="cromo-texto">
+                <h3>THE ACT OF LISTENING</h3>
+                <p>The search of silence -> collective effort
+                </p>
+                 <p>The listening process -> individual act through 🎧
+                </p>
+            </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        Sound Artist · Free impro soul · Contemporary pianist · Code lover
+        <p>© 2026 melisa cano – onicra</p>
+    </footer>
+
+</body>
+</html>

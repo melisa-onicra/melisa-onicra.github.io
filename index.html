@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio – Melisa</title>
+
+    <!-- Fuente Cutive Mono -->
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+
+    <!-- Fuente Syne Mono para la cabecera -->
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+
+     <!-- si estás leyendo esto es que te gusta el código tanto como a mi! contáctame! melisacanosanchez@gmail.com -->
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Cutive Mono', monospace;
+            background-color: #5f5264;
+            color: white;
+        }
+
+        header {
+            background-color: #362638;
+            color: white;
+            padding: 15px 15px;
+            text-align: center;
+            font-family: 'Syne Mono', monospace; /* Cabecera con Syne Mono */
+            opacity: 0; 
+           /* transform: translateY(-25px)*/ /*esto hacía que se desplazase desde arriba*/
+           animation: fadeInMove 3.8s ease forwards;
+        } 
+            @keyframes fadeInMove { to { opacity: 1; transform: translateY(0); } }
+
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.7;
+        }
+
+        /* Texto más grande en About y ONICRA */
+        section p {
+            font-size: 1.15rem;
+            line-height: 1.55;
+        }
+
+        h2 {
+            margin-top: 40px;
+            font-size: 1.8rem;
+            border: 4px groove #f4e45abb; 
+            padding: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 12px;
+            margin-top: 12px;
+            background-color: #f4e45abb;
+            color: black;
+            font-size: 0.9rem;
+        }
+
+
+
+@keyframes cambioColor {
+    0% { background-color: #9655939f; } /* rosa del banner */
+    100% { background-color: #f4e45abb; } /* amarillo del recuadro */
+}
+
+        a {
+            color: #362638;
+            text-decoration: none;
+        }
+        
+         .recuadro-onicra a:hover {
+            color: white;
+        }
+.recuadro-onicra {
+    background-color: #9655939f; /* mismo color que el footer */
+    color: #362638;
+    border: 8px groove #362638;
+    padding: 15px 20px;
+    max-width: 850px;
+    margin: 30px auto 10px auto;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Cutive Mono', monospace;
+    animation: cambioColor 2.5s ease forwards;
+    animation-delay: 1s; /*creo que lo tendré que quitar*/
+}
+
+.recuadro-onicra a:hover {
+    color:white; /* morado oscuro */
+}
+
+
+.palabra {
+    opacity: 0;
+    animation: aparecer 0s ease backwards;
+    animation-delay: calc(var(--i) * 0.35s);
+    animation-fill-mode: both;
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+
+
+.banner-onicra {
+    background-color:   #9655939f;/*anterior  #d9cb50bb #a65ea29f */
+    color: #f4e55a92;  
+    padding: 6px 0;
+    text-align: center;
+    font-size: 1.1rem;
+    animation: fadeInMove 6.8s ease forwards;
+    opacity: 0; 
+   
+}
+
+a {
+    color: #362638;
+    text-decoration: none;
+}
+
+   .linea-amarilla {
+    color: #f4e45abb;
+      font-family: 'Cutive Mono', monospace;
+            font-size: 1.1rem;
+            line-height: 1.4;
+    }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>MELISA_CANO == ONiCrA</h1>
+        <p>-- . .-.. .. ... .- -.-. .- -. --- / / --- -. .. -.-. .-. .- .-.-</p>
+    </header>
+
+  <div class="banner-onicra">
+  <strong>Onirical_Nuances ∿ Irreverent_Creations ∿ Rêve_Aether</strong>
+</div>
+
+   
+
+
+
+<div class="recuadro-onicra">
+    <strong>
+        ⟦ <span class="palabra" style="--i:1"><a href="projects.html">projects</a></span> ⟧ ·
+        ⟦ <span class="palabra" style="--i:2"><a href="oramics.html">oramics</a></span> ⟧ ·
+        ⟦ <span class="palabra" style="--i:3"><a href="shiopi.html">shiopi</a></span> ⟧ ·
+        ⟦ <span class="palabra" style="--i:4"><a href="listen.html">listen</a></span> ⟧
+    </strong>
+</div>
+
+
+    <section>
+        <h2><strong>👾 ABOUT 👾</strong></h2>
+      
+        <p>
+            Melisa Cano is a pianist and sound artist focused on contemporary music, free impro, 
+            and new forms of sound expressions. Although she is an artist with a classical academic background, 
+            her artistic work aims to explore and experiment with sound using it as a bruit material: electronic 
+            textures created with SuperCollider/PureData, soundscape recordings, and extended techniques on various instruments...
+            combining these materials with improvisation, intuition and our natural environment.</p>
+        <p>
+            As a performer, she likes to explore different sound effects produced inside piano’s
+            soundbox and strings, such as harmonics, scraping, or muting the strings, or with other materials like contact-microphones. 
+            She also programs her own digital instruments, 
+            including a tablet/iPad version of Oramics, the synthesizer originally designed by Daphne Oram in the 1960s. </p>
+        <p>
+            She is co-artist of n0n0is, a free-impro duo where she plays the piano, oramics_live, programmed sensors, 
+            lyre and tambourine. They have participated in interdisciplinary projects and festivals. n0n0is released their first album in 2025: 
+            <a href="https://nonois.bandcamp.com" target="_blank"><strong><span class="linea-amarilla">https://nonois.bandcamp.com</span></strong></a></p>
+        <p>
+            Melisa Cano holds BA in Piano Performance (Consmupa, Spain), 
+            a BA in Piano Pedagogy (Metropolia-University, Helsinki, Finland), 
+            a MA in Contemporary Music (Royal Conservatory, Madrid, Spain) 
+            and a MA in Electroacoustic Composition (Katarina Gurska Music Institute, Madrid, Spain).</p>
+
+        <h2><strong>🍄 🌿 ONiCrA 🌱 🌺</strong></h2>
+        <p>
+            <strong>ONiCrA</strong> is her artistic name for sound art works. Currently, her main projects are Oramics_back_to_life and SHIOPI. 
+        <p>
+            <strong>Oramics_live</strong> is a live version of Oramics, the graphic sound synthesizer by Daphne Oram, 
+            for iPad/ tabled that she has programmed with PureData and Mobmuplat 
+        
+            It was a final project for her studies in electroacoustic composition, 
+            and she uses as an instrument for free improvisation. Oramics_Live was presented 
+            at the <strong>Piksel 2024 Norway Festival</strong> in an online conference
+        <p>    
+            <strong>SHIOPI</strong> is a sound installation/ sound object that explores silence trough three main concepts: 
+            nature, listening, sonification of the invisible sourround. 
+            It was programmed with supercollider and puredata, using different sensors for temperature, humidity and uv. 
+            She is also currently working in soundscape works processed 
+            in supercollider, for her first solo album, using field recordings of different places in Europe.
+            SHIOPI was exhibited at the <strong>TTTarts 2025 festival</strong> in Ljubljana
+        <p>
+            Onirical_Nuances + Irreverent_Creations + Rêve_Aether
+        <p>
+           <a href="https://onicra.bandcamp.com" target="_blank"><strong><span class="linea-amarilla">https://onicra.bandcamp.com</span></strong></a>
+        </p>
+        </p>
+
+        <h2>🎹📚 ᗧ•••▼ </h2>
+        <p>
+            <strong>EDUCATION</strong>
+        <p>
+        MA, Electroacoustic Composition - 2023-2024<br>
+        Katarina Gurska Music Institution, Madrid (Spain)
+        <p>MA, New Technologies Applied to Music: Contemporary Performance - 2019-2021<br>
+        Royal Higher Conservatory of Music, Madrid (Spain)
+        <p>Arts Management Studies (22 ECTS) 2016-2017<br>
+        University of the Arts, Sibelius Academy, Helsinki (Finland)
+        <p>Postgraduate certificate in Education (60 ECTS) 2017<br>
+        Haaga Heelia - University of Applied Sciences, Helsinki (Finland)
+        <p>BA, Classical Music: Piano Pedagogy (270 ECTS) 2014-2017<br>
+        Metropolia University, Helsinki (Finland)
+        <p>BA, Classical Music: Piano Performance (240 ECTS) 2010-2014<br>
+        “Eduardo Martínez Torner” Higher Conservatory of Music Oviedo (Spain)<p>
+    </section>
+
+    <footer>
+        Sound Artist · Free impro soul · Contemporary pianist · Code lover<p>
+        © 2026 melisa cano – onicra
+    </footer>
+
+</body>
+</html>
